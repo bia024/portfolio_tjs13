@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" alt="HTML Badge" />
   <img src="https://img.shields.io/badge/CSS-3-purple?style=for-the-badge&logo=css&logoColor=purple" alt="CSS Badge" />
   <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=yellow" alt="JavaScript Badge" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge&logo=opensource" alt="License Badge" />
   
   <br /><br />
 
@@ -134,6 +135,12 @@ Este site está disponível publicamente através do **GitHub Pages**. Você pod
 ## Contribuições
  
 Contribuições são bem-vindas. Caso tenha sugestões de melhorias, correções ou novas funcionalidades, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
+
+------
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ------
 
