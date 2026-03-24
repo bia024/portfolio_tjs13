@@ -1,40 +1,62 @@
-# Projeto Portfólio Pessoal
- 
----
- 
-<div align="center"> 
-<img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" alt="HTML Badge" /> 
-<img src="https://img.shields.io/badge/CSS-3-purple?style=for-the-badge&logo=css&logoColor=purple" alt="CSS Badge" /> 
-<img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=yellow%22 alt="JavaScript Badge" /> 
+<div align="center">
+  <h1>🚀 Portfólio Pessoal | Bianca Caetano</h1>
+  <p><em>"Eu vi o futuro em cores e decidi construí-lo através do código."</em></p>
+
+  <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" alt="HTML Badge" />
+  <img src="https://img.shields.io/badge/CSS-3-purple?style=for-the-badge&logo=css&logoColor=purple" alt="CSS Badge" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=yellow" alt="JavaScript Badge" />
+  
+  <br /><br />
+
+  <a href="https://github.com/bia024/portfolio_tjs13">🔗 Acessar Deploy do Projeto</a>
 </div>
  
-<br />
+------
  
-O **Projeto Portfólio Pessoal** é um **site profissional moderno**, desenvolvido com **HTML, CSS e JavaScript**, com o objetivo de apresentar informações sobre a pessoa desenvolvedora, seus projetos e formas de contato de maneira clara, interativa e responsiva.
+## 👩🏽‍💻 A Desenvolvedora por trás do Código
  
-O projeto consome dados dinâmicos da **API do GitHub**, permitindo que informações como perfil e repositórios sejam carregadas automaticamente, mantendo o conteúdo sempre atualizado.
+Sou **Bianca Caetano**, Desenvolvedora Full Stack e estudante de Engenharia de Software.
+
+Minha jornada na tecnologia não começou no teclado. Começou entendendo o conceito de *Ubuntu* ("Eu sou porque nós somos") e provando minha autonomia ao hackear o sistema: estudando no Wi-Fi de um shopping durante intervalos de trabalho para vencer hackathons e ingressar em gigantes da tecnologia.
+
+Hoje, trago para o código a técnica exigente de quem já lidou com governança de dados sensíveis e anonimização com IA generativa no mundo corporativo e em cartórios. Construo sistemas escaláveis, pipelines seguros e acredito que a tecnologia serve, acima de tudo, para escalar o cuidado humano.
  
 ------
  
-## Funcionalidades
- 
-- Estrutura de páginas desenvolvida com **HTML semântico**
-- Estilização moderna com **CSS**, utilizando:
-  - Variáveis CSS
-  - Animações
-  - Layout responsivo (desktop, tablet e mobile)
-- Integração com a **API do GitHub** para:
-  - Exibição dinâmica das informações do perfil
-  - Listagem automática dos repositórios
-- Exibição dos projetos em **carrossel interativo** utilizando **Swiper.js**
-- **Formulário de contato com validação no frontend**, garantindo o correto preenchimento dos campos
-- Página dedicada de **confirmação de envio** do formulário
-- Navegação fluida com menu fixo e rolagem suave
-- Interface intuitiva e organizada, focada na experiência do usuário
- 
+## 📖 Visão Geral do Projeto
+
+Este **Portfólio Pessoal** é mais que uma vitrine de código; é a representação digital da minha evolução técnica. Trata-se de um **site profissional moderno**, desenvolvido com uma arquitetura frontend robusta e responsiva.
+
+O projeto consome dados dinâmicos da **API do GitHub**, garantindo que informações como perfil, repositórios e estatísticas estejam sempre atualizados em tempo real, sem necessidade de edição manual constante.
+
+O objetivo foi aplicar a precisão e o rigor na entrega — traduzidos em **Clean Code**, navegação fluida e foco total na UX (Experiência do Usuário).
+
 ------
- 
-## Estrutura do Projeto
+
+## ✨ Funcionalidades e Arquitetura
+
+- **Consumo Dinâmico de API:** Integração profunda com a GitHub API para carregamento automatizado de perfil e listagem de repositórios.
+- **Engenharia de Frontend:** Estrutura desenvolvida em **HTML5 semântico** e estilização moderna com **CSS3** (utilizando variáveis CSS, Flexbox/Grid e estratégias Mobile First).
+- **Interatividade e Lógica:** **JavaScript ES6+** garantindo animações, validação de formulários *client-side* rigorosa e componentização visual.
+- **Showcase de Projetos:** Exibição dos projetos em **carrossel interativo** utilizando a biblioteca **Swiper.js**.
+- **UX/UI (Experiência do Usuário):** Navegação fluida com menu fixo, rolagem suave (*scroll smooth*), feedback visual imediato e página dedicada de sucesso.
+- **Comunicação Real:** Formulário de contato integrado a serviço de envio de e-mails, com validação e feedback de envio.
+
+------
+
+## 🛠️ Tecnologias Utilizadas
+
+<div style="display: flex; gap: 10px;">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Swiper.js-6332F6?style=flat-square&logo=swiper&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_API-181717?style=flat-square&logo=github&logoColor=white" />
+</div>
+
+------
+
+## 📂 Estrutura de Pastas
  
 ```
 portfolio/
@@ -105,10 +127,73 @@ O site será aberto no navegador e todas as alterações poderão ser visualizad
  
 Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
  
-🔗 https://seu-usuario.github.io/seu-repositorio
+🔗 https://github.com/bia024/portfolio_tjs13
  
 ------
  
 ## Contribuições
  
 Contribuições são bem-vindas. Caso tenha sugestões de melhorias, correções ou novas funcionalidades, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
+
+------
+
+## Autora
+
+**Bianca Caetano**
+
+Desenvolvedora Full Stack e estudante de Bacharelado em Engenharia de Software.
+
+- **LinkedIn:** [www.linkedin.com/in/bia-caetano](https://www.linkedin.com/in/bia-caetano)
+- **Instagram:** [@_biacaetano24](https://www.instagram.com/_biacaetano24/)
+
+
+<div align="center"> 
+  <h1>🚀 Portfólio Pessoal | Bianca Caetano</h1>
+  <p><em>"Eu vi o futuro em cores e decidi construí-lo através do código."</em></p>
+</div>
+
+<div align="center"> 
+  <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" alt="HTML Badge" /> 
+  <img src="https://img.shields.io/badge/CSS-3-purple?style=for-the-badge&logo=css&logoColor=purple" alt="CSS Badge" /> 
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=yellow" alt="JavaScript Badge" /> 
+</div>
+
+<br />
+
+## 📖 Visão Geral
+
+O **Projeto Portfólio Pessoal** é mais que uma vitrine de código; é a representação digital da minha jornada. Desenvolvido com uma arquitetura frontend moderna e responsiva, este projeto consome dados dinâmicos da **API do GitHub**, garantindo que meus repositórios e evolução técnica estejam sempre atualizados em tempo real.
+
+O objetivo aqui foi aplicar a precisão e o rigor na entrega — habilidades que refinei no mundo corporativo e em cartórios — traduzidos em **Clean Code**, navegação fluida e foco total na experiência do usuário.
+
+------
+
+## ⚙️ Arquitetura e Funcionalidades
+
+- **Consumo Dinâmico de API:** Integração com a GitHub API para carregamento automatizado de perfil e repositórios.
+- **Engenharia de Frontend:** Estrutura desenvolvida em HTML semântico e CSS moderno (uso de variáveis e layout responsivo).
+- **Interatividade Limpa:** JavaScript ES6+ garantindo animações, validação de formulários no lado do cliente e componentização visual com **Swiper.js**.
+- **UX/UI:** Navegação fluida, menu fixo e feedback visual imediato em formulários de contato (Form Submit).
+
+------
+
+## 👩🏽‍💻 A Desenvolvedora por trás do Código
+
+Sou **Bianca Caetano**, Desenvolvedora Full Stack e estudante de Engenharia de Software. 
+
+Minha jornada na tecnologia não começou no teclado. Começou entendendo o conceito de *Ubuntu* ("Eu sou porque nós somos") e provando minha autonomia ao hackear o sistema: estudando no Wi-Fi de um shopping durante intervalos de trabalho para vencer hackathons e ingressar em gigantes da tecnologia. 
+
+Hoje, trago para o código a técnica exigente de quem já lidou com governança de dados sensíveis e anonimização com IA generativa. Construo sistemas escaláveis, pipelines seguros e acredito que a tecnologia serve, acima de tudo, para escalar o cuidado humano.
+
+🔗 **Vamos conectar nossas redes e mentalidades:**
+- **LinkedIn:** [linkedin.com/in/bia-caetano](https://www.linkedin.com/in/bia-caetano)
+- **GitHub:** [github.com/bia024](https://github.com/bia024)
+- **Instagram** [https://www.instagram.com/_biacaetano24/](https://github.com/bia024/portfolio_tjs13)
+
+------
+
+## 🚀 Executando Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/bia024/portfolio_tjs13.git](https://github.com/bia024/portfolio_tjs13.git)
