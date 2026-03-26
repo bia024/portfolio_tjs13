@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
+    <!-- Fontes do Google -->
+    <!-- utilize a api do google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- e utilize a fonte do gogle - a fonte poppins -->
+    <!-- Fonte do Google - Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Bianca Caetano" />
@@ -15,6 +27,9 @@
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
     <link rel="import" href="success.html" />
 
+    <!-- CSS principal da página -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Bianca Caetano - Portfólio</title>
   </head>
   <body>
@@ -23,24 +38,30 @@
 
     <!-- Cabeçalho da Página -->
     <header>
-      <!-- Titulo do Cabeçalho -->
-      <a href="index.html" id="titulo">Portfólio</a>
+      <div class="menu-content">
+        <!-- Titulo do Cabeçalho -->
+        <a href="index.html" id="titulo">Portfólio</a>
 
-      <!-- Menu de Navegação -->
-      <nav>
-        <ul class="menu-list">
-          <li><a href="#hero">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contatos</a></li>
-        </ul>
+        <!-- Menu de Navegação -->
+        <nav>
+          <ul class="menu-list">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contatos</a></li>
+          </ul>
 
-        <!-- Botão Toggle Dark Mode -->
-        <button id="theme-toggle" class="theme-btn" aria-label="Alternar para modo escuro">
-          <!-- Ícone será inserido via CSS ou SVG aqui -->
-          <span>🌓</span> 
-        </button>
-      </nav>
+          <!-- Botão Toggle Dark Mode -->
+          <button
+            id="theme-toggle"
+            class="theme-btn"
+            aria-label="Alternar para modo escuro"
+          >
+            <!-- Ícone será inserido via CSS ou SVG aqui -->
+            <span>🌓</span>
+          </button>
+        </nav>
+      </div>
     </header>
 
     <!-- Seção Principal  -->
@@ -226,30 +247,46 @@
         <!-- Formulário de Contato -->
         <form id="formulario">
           <label for="nome"> Nome </label>
-          <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
+          <input
+            id="nome"
+            name="nome"
+            type="text"
+            placeholder="Digite o seu nome completo"
+          />
           <span id="erro-nome"></span>
 
           <label for="email"> E-mail </label>
-          <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="Digite o seu e-mail"
+          />
           <span id="erro-email"></span>
 
           <label for="assunto"> Assunto </label>
-          <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
+          <input
+            id="assunto"
+            name="assunto"
+            type="text"
+            placeholder="Digite o assunto da mensagem"
+          />
           <span id="erro-assunto"></span>
 
           <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            placeholder="Digite a sua mensagem"
+          ></textarea>
           <span id="erro-mensagem"></span>
 
           <button class="botao" type="submit">Enviar Mensagem</button>
-
         </form>
       </section>
     </main>
 
     <!-- Rodapé da Página -->
-    <footer>
-        &copy; 2026 - Desenvolvido por Bianca Caetano.
-    </footer>
+    <footer>&copy; 2026 - Desenvolvido por Bianca Caetano.</footer>
   </body>
 </html>
