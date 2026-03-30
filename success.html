@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <!-- Fontes do Google -->
@@ -29,27 +29,31 @@
     <title>Bianca Caetano - Portfólio</title>
   </head>
   <body>
-    <!-- Cabeçalho da Página -->
+    <a href="#success" class="skip-link">Pular para o conteúdo principal</a>
     <header>
-      <!-- Titulo do Cabeçalho -->
-      <a href="index.html" id="titulo">Portfólio</a>
-
-      <!-- Menu de Navegação -->
-      <nav>
-        <ul class="menu-list">
-          <li><a href="index.html#hero">Início</a></li>
-          <li><a href="index.html#about">Sobre</a></li>
-          <li><a href="index.html#projects">Projetos</a></li>
-          <li><a href="index.html#contact">Contatos</a></li>
-        </ul>
-      </nav>
+      <div class="menu-content">
+        <a href="index.html" id="titulo">Caetano, Bia</a>
+        <nav>
+          <ul class="menu-list">
+            <li><a href="index.html#hero">Início</a></li>
+            <li><a href="index.html#about">Sobre</a></li>
+            <li><a href="index.html#projects">Projetos</a></li>
+            <li><a href="index.html#contact">Contatos</a></li>
+          </ul>
+          <button
+            id="theme-toggle"
+            class="theme-btn"
+            aria-label="Alternar para modo escuro"
+          >
+            <span class="dark-mode">🌓</span>
+          </button>
+        </nav>
+      </div>
     </header>
-
-    <!-- Seção Principal  -->
     <main>
       <section id="success" class="section-container success-container">
         <article class="success-content">
-          <figure class="success-image">
+          <figure class="success-icon">
             <img src="./assets/img/success.svg" alt="Checkmark de Sucesso" />
           </figure>
           <h1>E-mail enviado com sucesso!</h1>
@@ -61,8 +65,7 @@
         </article>
       </section>
     </main>
-
-    <!-- Rodapé da Página -->
     <footer>&copy; 2026 - Desenvolvido por Bianca Caetano.</footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

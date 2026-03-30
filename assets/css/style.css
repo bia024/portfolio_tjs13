@@ -1,4 +1,3 @@
-/* Reset do Navegador */
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +8,7 @@
   outline: none;
 }    
 
-/* Variáveis */
 :root {
-    /* Paleta de Cores - Purple */
     --purple-50: #f4eaff;
     --purple-100: #e9dcfa;
     --purple-200: #cdb3f0;
@@ -24,21 +21,17 @@
     --purple-900: #2a0e4d;
     --purple-950: #1a0730;
 
-    /* Cores Neutras */
     --gray-200: #e8e8e8;
     --gray-400: #505861;
     --black: #171717;
     --white: #FAF7FF;
 
-    /* Cores de Estado */
     --error: #e63946;
 
-    /* Sombras */
     --shadow-sm: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
     --shadow-md: 0 0.25rem 0.75rem rgba(107, 54, 200, 0.3);
     --shadow-lg: 0 0.5rem 1.5rem rgba(107, 54, 200, 0.2);
 
-    /* Espaçamentos */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
@@ -46,7 +39,6 @@
     --spacing-xl: 3rem;
     --spacing-2xl: 4rem;
 
-    /* Tamanhos de Fonte */
     --text-sm: 0.75rem;
     --text-base: 1rem;
     --text-lg: 1.25rem;
@@ -54,18 +46,27 @@
     --text-2xl: 2rem;
     --text-3xl: 2.5rem;
 
-    /* Border Radius */
     --radius-sm: 0.25rem;
     --radius-md: 0.5rem;
     --radius-lg: 1rem;
     --radius-xl: 2rem;
     --radius-full: 50%;
 
-    /* Animação Padrão */
     --transition-default: all 0.3s ease;
 }
 
-/* Configurações Básicas */
+body.dark-theme {
+    --white: #171717;
+    --black: #FAF7FF;
+    --gray-200: #2a2a2a;
+    --gray-400: #a0a0a0;
+    --purple-50: #2a0e4d;
+}
+
+body.dark-theme h1,
+body.dark-theme h2 {
+    color: #FAF7FF;
+}
 
 html {
   scroll-behavior: smooth;
@@ -84,7 +85,24 @@ main {
   flex: 1;
 }
 
-/* Seções - Base Comum */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--purple-500);
+  color: var(--white);
+  padding: var(--spacing-sm);
+  z-index: 2000;
+  transition: top 0.3s ease;
+  font-weight: 600;
+  border-radius: 0 0 var(--radius-md) 0;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--white);
+  outline-offset: -4px;
+}
 
 .section-container {
   max-width: 70rem;
@@ -92,8 +110,6 @@ main {
   padding: var(--spacing-xl) var(--spacing-md);
   scroll-margin-top: 6rem;
 }
-
-/* Botões */
 
 .buttons-container {
   display: flex;
@@ -139,8 +155,6 @@ main {
   transform: translateY(-0.25rem);
 }
 
-/* Botões pequenos - Card Projetos */
-
 .botao.botao-sm,
 .botao-outline.botao-sm {
   min-width: 6rem;
@@ -149,8 +163,6 @@ main {
   border-radius: 0.25rem;
   font-size: var(--text-sm);
 }
-
-/* Seção Header - Cabeçalho e Menu */
 
 header {
   position: sticky;
@@ -165,7 +177,7 @@ header {
 
 header a {
   font-weight: 600;
-  color: var(--white);
+  color: #FAF7FF;
   transition: color 0.3s ease;
 }
 
@@ -188,17 +200,32 @@ header a:hover {
   padding: 0 var(--spacing-md);
 }
 
+header nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
 .menu-list {
   display: flex;
   gap: var(--spacing-lg);
   list-style: none;
 }
 
+.theme-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--text-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-default);
+}
+
 .menu-list a {
   padding: var(--spacing-xs);
 }
-
-/* Seção Hero */
 
 .hero-container {
   display: flex;
@@ -244,7 +271,6 @@ header a:hover {
   border-radius: var(--radius-xl);
 }
 
-/* Animação Flutuante */
 @keyframes float {
   
   0%,
@@ -258,12 +284,9 @@ header a:hover {
 
 }
 
-/* Usa animação */
 .float-animation {
   animation: float 3s ease-in-out infinite;
 }
-
-/* About */
 
 .about-container {
     display: flex;
@@ -336,8 +359,6 @@ header a:hover {
     color: var(--gray-400);
 }
 
-/* Projects */
-
 .projects-container {
   scroll-margin-top: 3rem;
   margin: var(--spacing-2xl) auto; 
@@ -350,8 +371,6 @@ header a:hover {
   padding: var(--spacing-sm) var(--spacing-xl) var(--spacing-xl);
   overflow: hidden;
 }
-
-/* Card Projetos */
 
 .project-card {
   display: flex;
@@ -403,6 +422,7 @@ header a:hover {
 }
 
 .project-content p {
+  flex: 1;
   margin-bottom: var(--spacing-sm);
   font-size: var(--text-base);
   color: var(--gray-400)
@@ -431,8 +451,6 @@ header a:hover {
   margin-top: var(--spacing-sm);
 }
 
-/* Configuração do Swiper */
-
 .swiper-wrapper {
     align-items: stretch;
 }
@@ -442,7 +460,6 @@ header a:hover {
     height: auto;
 }
 
-/* Botões do Swiper (navegação) */
 .swiper-button-next,
 .swiper-button-prev {
     width: 3rem;
@@ -460,7 +477,6 @@ header a:hover {
     color: var(--purple-800);
 }
 
-/* Indicadores de paginação */
 .swiper-pagination-bullet {
     width: 0.75rem;
     height: 0.75rem;
@@ -474,15 +490,11 @@ header a:hover {
     background-color: var(--purple-500);
 }
 
-/* Seção de Contato */
-
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-2xl);
 }
-
-/* Redes Sociais */
 
 .contact-info h2{
   margin-bottom: var(--spacing-md);
@@ -523,8 +535,6 @@ header a:hover {
           contrast(91%);
 }
 
-/* Formulário de Contato */
-
 form {
   display: flex;
   flex-direction: column;
@@ -564,17 +574,13 @@ form span {
   color: var(--error);
 }
 
-/* Footer */
-
 footer {
     padding: 2.5rem;
     background: linear-gradient(to right, var(--purple-500), var(--purple-800));
     font-weight: 600;
     text-align: center;
-    color: var(--white);
+    color: #FAF7FF;
 }
-
-/* Página Success */
 
 .success-container {
     display: flex;
@@ -629,18 +635,12 @@ footer {
             contrast(96%);
 }
 
-/* ========================================
-   RESPONSIVIDADE - TABLETS (até 1024px)
-======================================== */
-
 @media screen and (max-width: 1024px) {
    
-    /* Layout */
     .section-container {
         padding: var(--spacing-lg) var(--spacing-md);
     }
 
-    /* Tipografia */
     .section-container h1 {
         font-size: var(--text-3xl);
     }
@@ -665,19 +665,16 @@ footer {
         font-size: var(--text-lg); 
     }
 
-    /* Header */
     #titulo {
         font-size: var(--text-xl); 
     }
 
-    /* Header - Oculta menu em telas pequenas */
     @media (max-width: 768px) {
         .menu-list {
             display: none;
         }
     }
 
-    /* Hero */
     .hero-container {
         flex-direction: column-reverse;
         gap: var(--spacing-lg);
@@ -706,7 +703,6 @@ footer {
         white-space: nowrap;
     }
 
-    /* About */
     .about-container {
         flex-direction: column;
         gap: var(--spacing-md);
@@ -745,7 +741,6 @@ footer {
         width: 100%;
     }
 
-    /* Projects */
     .projects-container {
         margin: var(--spacing-lg) auto 0;
     }
@@ -796,7 +791,6 @@ footer {
         display: none;
     }
 
-    /* Contact */
     .contact-container {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
@@ -804,7 +798,6 @@ footer {
         margin: 0 auto;
     }
 
-    /* Success Page */
     .success-container {
         padding: var(--spacing-xl) var(--spacing-md);
         min-height: calc(100vh - 10rem);
@@ -826,18 +819,12 @@ footer {
     }
 }
 
-/* ========================================
-   RESPONSIVIDADE - MOBILE (até 480px)
-======================================== */
-
 @media screen and (max-width: 480px) {
 
-    /* Layout */
     .section-container {
         padding: var(--spacing-md) var(--spacing-sm);
     }
 
-    /* Tipografia Mobile */
     .section-container h1 {
         font-size: var(--text-xl);
     }
@@ -862,7 +849,6 @@ footer {
         font-size: var(--text-base);
     }
 
-    /* Header */
     #titulo {
         font-size: var(--text-xl);
     }
@@ -871,7 +857,6 @@ footer {
         display: none;
     }
 
-    /* Hero */
     .hero-container {
         gap: var(--spacing-sm);
     }
@@ -907,7 +892,6 @@ footer {
         max-width: 20rem;
     }
 
-    /* About */
     .about-container {
         margin: var(--spacing-lg) 0.5rem;
         padding: var(--spacing-md);
@@ -933,7 +917,6 @@ footer {
         font-size: var(--text-sm);
     }
 
-    /* Projects */
     .projects-container {
         margin: var(--spacing-lg) auto 0;
     }
@@ -967,7 +950,6 @@ footer {
         font-size: var(--text-base);
     }
 
-    /* Contact */
     .contact-container {
         width: 100%;
     }
@@ -987,7 +969,6 @@ footer {
         height: 4rem;
     }
 
-    /* Formulário */
     form {
         gap: var(--spacing-sm);
     }
@@ -1007,13 +988,11 @@ footer {
         font-size: var(--text-base);
     }
 
-    /* Footer */
     footer {
         padding: var(--spacing-md) var(--spacing-sm);
         font-size: var(--text-sm);
     }
     
-    /* Success Page */
     .success-container {
         padding: var(--spacing-lg) var(--spacing-sm);
         min-height: calc(100vh - 8rem);
