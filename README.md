@@ -9,7 +9,7 @@
   
   <br /><br />
 
-  <a href="https://github.com/bia024/portfolio_tjs13">🔗 Acessar Deploy do Projeto</a>
+  <a href="https://portfolio-tjs13.vercel.app/">🔗 Acessar Deploy do Projeto</a>
 </div>
  
 ------
